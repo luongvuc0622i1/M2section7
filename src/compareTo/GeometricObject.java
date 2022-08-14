@@ -1,12 +1,14 @@
-public abstract class GeometricObject {
-     private String color = "white";
-     private boolean filled;
-     private java.util.Date dateCreated;
+package compareTo;
 
-     /** Construct a default geometric object */
-     protected GeometricObject() {
-         dateCreated = new java.util.Date();
-     }
+public abstract class GeometricObject {
+    private String color = "white";
+    private boolean filled;
+    private java.util.Date dateCreated;
+
+    /** Construct a default geometric object */
+    protected GeometricObject() {
+        dateCreated = new java.util.Date();
+    }
 
     /** Construct a geometric object with color and filled value */
     protected GeometricObject(String color, boolean filled) {
@@ -26,7 +28,7 @@ public abstract class GeometricObject {
     }
 
     /** Return filled. Since filled is boolean,
-    * the get method is named isFilled */
+     * the get method is named isFilled */
     public boolean isFilled() {
         return filled;
     }
@@ -44,7 +46,7 @@ public abstract class GeometricObject {
     @Override
     public String toString() {
         return "created on " + dateCreated + "Äncolor: " + color +
-        " and filled: " + filled;
+                " and filled: " + filled;
     }
 
     /** Abstract method getArea */
